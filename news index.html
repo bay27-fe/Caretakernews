@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CareTaker News</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .ticker {
+      animation: scroll-left 15s linear infinite;
+    }
+    @keyframes scroll-left {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Header -->
+  <header class="bg-red-600 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <img src="https://i.postimg.cc/638BCMY6/IMG-20250515-230435.jpg" alt="Logo Berita" class="w-10 h-10 rounded-full object-cover" />
+        <h1 class="text-2xl font-bold">Berita Harian</h1>
+      </div>
+      <nav class="space-x-4 hidden md:block">
+        <a href="#" class="hover:underline">Beranda</a>
+        <a href="#" class="hover:underline">Nasional</a>
+        <a href="#" class="hover:underline">Teknologi</a>
+        <a href="#" class="hover:underline">Olahraga</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Live Ticker -->
+  <div class="bg-yellow-100 text-red-700 overflow-hidden whitespace-nowrap">
+    <div class="ticker py-2 px-4 font-medium">
+      Breaking News: peringkat rank anggota squad | Dark sistem muncul | Torpedo naik | Caretaker mau memasuki m series2025
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 mt-6 flex flex-col lg:flex-row gap-6">
+    <!-- Left: Berita -->
+    <section class="lg:w-2/3 space-y-6">
+      
+      <!-- Headline Berita -->
+      <div class="relative group rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
+        <img src="https://i.postimg.cc/TYLtLFmN/Screenshot-20250515-231425-com-mobile-legends.jpg" alt="Presiden Resmikan Bandara"
+          class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+        <div class="absolute bottom-0 p-6 text-white">
+          <h2 class="text-2xl font-bold mb-2">Peringkat pertama saat ini dengan perolehan bintang paling tinggi dengan 63</h2>
+          <p class="text-sm text-gray-200 mb-1">15 Mei 2025 | Nasional</p>
+          <p class="hidden md:block">Kemunculan Dark sistem baru di squad caretaker...</p>
+        </div>
+      </div>
+
+      <!-- Daftar Berita Lain -->
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Berita 1 -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+          <img src="https://i.postimg.cc/25MQD89z/Screenshot-20250515-231318-com-mobile-legends.jpg" class="w-full h-48 object-cover" />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2 text-red-700">Kemunculan Dark sistem baru di squad CareTaker</h3>
+            <p class="text-sm text-gray-500 mb-1">Nasional | 15 Mei 2025</p>
+            <p class="text-gray-700">Palyer ini mulai menunjukkan jati dirinya sebagai dark sistem dikarenakan keseringan cuci baut.)</p>
+          </div>
+        </div>
+
+        <!-- Berita 2 -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+          <img src="https://source.unsplash.com/600x400/?ai,technology" class="w-full h-48 object-cover" />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2 text-blue-700">AI Kian Dominan di Tahun 2025</h3>
+            <p class="text-sm text-gray-500 mb-1">Tenggorokan | 15 Mei 2025</p>
+            <p class="text-gray-700">Kenaikan harga Torpedo dikedai ibu menjadi kabar sesih bagi anggota squad caretaker,terutama didim..</p>
+          </div>
+        </div>
+
+        <!-- Berita 3 -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+          <img src="https://source.unsplash.com/600x400/?sports,indonesia" class="w-full h-48 object-cover" />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2 text-green-700">Timnas Indonesia ke Final SEA Games</h3>
+            <p class="text-sm text-gray-500 mb-1">Olahraga | 15 Mei 2025</p>
+            <p class="text-gray-700">Kemenangan dramatis melawan jepang membawa Timnas senior ke piala dunia dan berpotensi masuk ke final piala dunia..</p>
+          </div>
+        </div>
+
+        <!-- Berita 4 -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+          <img src="https://source.unsplash.com/600x400/?finance,money" class="w-full h-48 object-cover" />
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2 text-yellow-700">BBM Turun, Daya Beli Naik</h3>
+            <p class="text-sm text-gray-500 mb-1">Ekonomi | 15 Mei 2025</p>
+            <p class="text-gray-700">Penurunan harga BBM menjadi kabar gembira bagi masyarakat, terutama pelaku UMKM dan sektor transportasi umum.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sidebar -->
+    <aside class="lg:w-1/3 space-y-4">
+      <div class="bg-white p-4 rounded shadow">
+        <h3 class="text-lg font-semibold mb-2">Kategori</h3>
+        <ul class="space-y-1">
+          <li><a href="#" class="text-blue-600 hover:underline">Nasional</a></li>
+          <li><a href="#" class="text-blue-600 hover:underline">Internasional</a></li>
+          <li><a href="#" class="text-blue-600 hover:underline">Ekonomi</a></li>
+          <li><a href="#" class="text-blue-600 hover:underline">Tenggorokan</a></li>
+          <li><a href="#" class="text-blue-600 hover:underline">Olahraga</a></li>
+        </ul>
+      </div>
+
+      <div class="bg-white p-4 rounded shadow">
+        <h3 class="text-lg font-semibold mb-2">Berita Populer</h3>
+        <ul class="list-disc ml-5 text-sm">
+          <li>BBM Turun, Ekonomi Rakyat Terbantu</li>
+          <li>Riset: Torpedo naik Produktivitas 200%</li>
+          <li>Timnas senior Mengukir Sejarah</li>
+        </ul>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center p-4 mt-10">
+    &copy; 2025 Berita Harian. Hak cipta dilindungi bapak irwan.
+  </footer>
+
+</body>
+</html>
